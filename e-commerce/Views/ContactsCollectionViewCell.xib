@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContactsCollectionViewCell" customModule="e_commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaG-G5-MfN" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="122" height="118"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u28-Wx-0Hf">
+                                <rect key="frame" x="4" y="4" width="114" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="general"/>
+                        <constraints>
+                            <constraint firstItem="u28-Wx-0Hf" firstAttribute="top" secondItem="LaG-G5-MfN" secondAttribute="top" constant="4" id="3q5-OS-TEq"/>
+                            <constraint firstAttribute="trailing" secondItem="u28-Wx-0Hf" secondAttribute="trailing" constant="4" id="H6N-04-g6A"/>
+                            <constraint firstItem="u28-Wx-0Hf" firstAttribute="leading" secondItem="LaG-G5-MfN" secondAttribute="leading" constant="4" id="ZAX-i2-CyJ"/>
+                            <constraint firstAttribute="bottom" secondItem="u28-Wx-0Hf" secondAttribute="bottom" constant="4" id="sbs-RI-Ahb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerReduis">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="LaG-G5-MfN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="BCi-3s-rOZ"/>
+                <constraint firstAttribute="trailing" secondItem="LaG-G5-MfN" secondAttribute="trailing" constant="4" id="Dm1-Oz-gNt"/>
+                <constraint firstAttribute="bottom" secondItem="LaG-G5-MfN" secondAttribute="bottom" constant="4" id="Fte-RE-Aj5"/>
+                <constraint firstItem="LaG-G5-MfN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="za8-YF-cun"/>
+            </constraints>
+            <size key="customSize" width="130" height="126"/>
+            <connections>
+                <outlet property="ContactImage" destination="u28-Wx-0Hf" id="IPG-6c-qyr"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="25.35211267605634"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="general">
+            <color red="0.85900002717971802" green="0.18799999356269836" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

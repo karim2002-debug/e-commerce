@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdatePersonalProfileViewController" customModule="e_commerce" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndictor" destination="6aZ-QW-CRD" id="Qid-3H-zqB"/>
+                <outlet property="currentPasswordTextField" destination="XAM-2L-EIL" id="WNt-HY-4Jv"/>
+                <outlet property="emailTextField" destination="ala-l2-Jil" id="fav-WV-ena"/>
+                <outlet property="eyeButton" destination="QRA-iz-2ZD" id="97T-Zm-2Sc"/>
+                <outlet property="imageTextField" destination="9ow-dl-p0f" id="b7i-Pl-2xu"/>
+                <outlet property="nameTextField" destination="pkm-JV-bpj" id="iAs-64-xaG"/>
+                <outlet property="phoneTextField" destination="l7u-YG-pI3" id="Nm9-fQ-XOo"/>
+                <outlet property="updateButton" destination="0rc-Bp-5AS" id="wni-XD-DNR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cJS-ts-BSt">
+                    <rect key="frame" x="8" y="75" width="377" height="512"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvZ-ii-Rw5" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="96"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkm-JV-bpj" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                    <rect key="frame" x="16" y="8" width="353" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                            <color key="value" name="general"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                            <real key="value" value="1.2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="pkm-JV-bpj" firstAttribute="leading" secondItem="rvZ-ii-Rw5" secondAttribute="leading" constant="16" id="289-De-kBk"/>
+                                <constraint firstAttribute="height" constant="70" id="SD4-i7-BTo"/>
+                                <constraint firstAttribute="trailing" secondItem="pkm-JV-bpj" secondAttribute="trailing" constant="8" id="Sfx-t1-bsL"/>
+                                <constraint firstItem="pkm-JV-bpj" firstAttribute="top" secondItem="rvZ-ii-Rw5" secondAttribute="top" constant="8" id="bDe-eX-1yH"/>
+                                <constraint firstAttribute="bottom" secondItem="pkm-JV-bpj" secondAttribute="bottom" constant="8" id="tHl-kc-zt1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXl-IZ-4Rb" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="104" width="377" height="96"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ala-l2-Jil" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                    <rect key="frame" x="16" y="8" width="353" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                            <color key="value" name="general"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                            <real key="value" value="1.2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ala-l2-Jil" firstAttribute="top" secondItem="UXl-IZ-4Rb" secondAttribute="top" constant="8" id="96x-Hh-Tgh"/>
+                                <constraint firstAttribute="trailing" secondItem="ala-l2-Jil" secondAttribute="trailing" constant="8" id="KUb-s1-h9c"/>
+                                <constraint firstAttribute="bottom" secondItem="ala-l2-Jil" secondAttribute="bottom" constant="8" id="OIR-55-6gU"/>
+                                <constraint firstItem="ala-l2-Jil" firstAttribute="leading" secondItem="UXl-IZ-4Rb" secondAttribute="leading" constant="16" id="pfJ-ec-WOX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zu5-nH-ay0" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="208" width="377" height="96"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7u-YG-pI3" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                    <rect key="frame" x="16" y="8" width="353" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                            <color key="value" name="general"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                            <real key="value" value="1.2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="l7u-YG-pI3" secondAttribute="bottom" constant="8" id="6y9-eh-AXA"/>
+                                <constraint firstItem="l7u-YG-pI3" firstAttribute="top" secondItem="zu5-nH-ay0" secondAttribute="top" constant="8" id="FGE-ZQ-e1H"/>
+                                <constraint firstItem="l7u-YG-pI3" firstAttribute="leading" secondItem="zu5-nH-ay0" secondAttribute="leading" constant="16" id="Qub-lf-SSP"/>
+                                <constraint firstAttribute="trailing" secondItem="l7u-YG-pI3" secondAttribute="trailing" constant="8" id="oiZ-ff-9jH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kem-C2-NNN" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="312" width="377" height="96"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAM-2L-EIL" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                    <rect key="frame" x="16" y="4" width="353" height="72"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                            <color key="value" name="general"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                            <real key="value" value="1.2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRA-iz-2ZD">
+                                    <rect key="frame" x="311.33333333333331" y="23.000000000000004" width="57.666666666666686" height="34.333333333333343"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system"/>
+                                    <connections>
+                                        <action selector="iconAction:" destination="-1" eventType="touchUpInside" id="zDX-6Z-3aS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="XAM-2L-EIL" secondAttribute="trailing" constant="8" id="C7p-uQ-nJI"/>
+                                <constraint firstItem="QRA-iz-2ZD" firstAttribute="centerY" secondItem="XAM-2L-EIL" secondAttribute="centerY" id="PJF-nI-MKI"/>
+                                <constraint firstAttribute="bottom" secondItem="XAM-2L-EIL" secondAttribute="bottom" constant="20" id="TbA-tx-Kh4"/>
+                                <constraint firstItem="XAM-2L-EIL" firstAttribute="top" secondItem="Kem-C2-NNN" secondAttribute="top" constant="4" id="Zbr-dM-cbh"/>
+                                <constraint firstAttribute="trailing" secondItem="QRA-iz-2ZD" secondAttribute="trailing" constant="8" id="nUp-rT-VFH"/>
+                                <constraint firstItem="XAM-2L-EIL" firstAttribute="leading" secondItem="Kem-C2-NNN" secondAttribute="leading" constant="16" id="t2I-Ev-pMy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii4-Fr-dCc" customClass="CardView" customModule="e_commerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="416" width="377" height="96"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Image url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ow-dl-p0f" customClass="YoshikoTextField" customModule="TextFieldEffects">
+                                    <rect key="frame" x="16" y="4" width="353" height="72"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                                            <color key="value" name="general"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                            <real key="value" value="1.2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="9ow-dl-p0f" firstAttribute="top" secondItem="Ii4-Fr-dCc" secondAttribute="top" constant="4" id="1E3-RT-5dg"/>
+                                <constraint firstAttribute="bottom" secondItem="9ow-dl-p0f" secondAttribute="bottom" constant="20" id="F2r-55-hKa"/>
+                                <constraint firstAttribute="trailing" secondItem="9ow-dl-p0f" secondAttribute="trailing" constant="8" id="krj-Fu-zhQ"/>
+                                <constraint firstItem="9ow-dl-p0f" firstAttribute="leading" secondItem="Ii4-Fr-dCc" secondAttribute="leading" constant="16" id="vkX-q9-bPg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rvZ-ii-Rw5" firstAttribute="width" secondItem="cJS-ts-BSt" secondAttribute="width" id="EhO-1d-EFo"/>
+                        <constraint firstItem="UXl-IZ-4Rb" firstAttribute="height" secondItem="rvZ-ii-Rw5" secondAttribute="height" id="NcF-fv-TYv"/>
+                        <constraint firstItem="Kem-C2-NNN" firstAttribute="width" secondItem="zu5-nH-ay0" secondAttribute="width" id="Xtv-3m-bAF"/>
+                        <constraint firstItem="Kem-C2-NNN" firstAttribute="height" secondItem="zu5-nH-ay0" secondAttribute="height" id="cus-y4-sa6"/>
+                        <constraint firstItem="zu5-nH-ay0" firstAttribute="width" secondItem="UXl-IZ-4Rb" secondAttribute="width" id="gbw-6Q-hVE"/>
+                        <constraint firstItem="UXl-IZ-4Rb" firstAttribute="width" secondItem="rvZ-ii-Rw5" secondAttribute="width" id="oKk-Dc-DYb"/>
+                        <constraint firstItem="zu5-nH-ay0" firstAttribute="height" secondItem="UXl-IZ-4Rb" secondAttribute="height" id="yBr-3R-lOX"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rc-Bp-5AS">
+                    <rect key="frame" x="16" y="619" width="361" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="UPDATE"/>
+                    <connections>
+                        <action selector="updateButton:" destination="-1" eventType="touchUpInside" id="P8B-Ds-e0x"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-QW-CRD" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="123" y="619" width="146" height="34.333333333333371"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballPulseSync"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="6aZ-QW-CRD" firstAttribute="centerY" secondItem="0rc-Bp-5AS" secondAttribute="centerY" id="7Ey-Bn-qIa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0rc-Bp-5AS" secondAttribute="trailing" constant="16" id="88C-Se-dOc"/>
+                <constraint firstItem="0rc-Bp-5AS" firstAttribute="top" secondItem="cJS-ts-BSt" secondAttribute="bottom" constant="32" id="GxF-G8-qEU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cJS-ts-BSt" secondAttribute="trailing" constant="8" id="Pro-U2-rN4"/>
+                <constraint firstItem="6aZ-QW-CRD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="123" id="Wuu-yr-rm9"/>
+                <constraint firstItem="cJS-ts-BSt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.58" id="XXt-LF-3Et"/>
+                <constraint firstItem="0rc-Bp-5AS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ycu-r8-fAS"/>
+                <constraint firstItem="cJS-ts-BSt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="bPe-vj-sun"/>
+                <constraint firstItem="cJS-ts-BSt" firstAttribute="centerX" secondItem="0rc-Bp-5AS" secondAttribute="centerX" id="uic-RE-n2A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6aZ-QW-CRD" secondAttribute="trailing" constant="124" id="v3p-A0-4gJ"/>
+                <constraint firstItem="6aZ-QW-CRD" firstAttribute="height" secondItem="0rc-Bp-5AS" secondAttribute="height" id="xlO-8M-b4e"/>
+                <constraint firstItem="cJS-ts-BSt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="yUC-fQ-Df2"/>
+            </constraints>
+            <point key="canvasLocation" x="-5.343511450381679" y="0.0"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="9ow-dl-p0f">
+            <size key="intrinsicContentSize" width="60" height="18.666666666666668"/>
+        </designable>
+        <designable name="XAM-2L-EIL">
+            <size key="intrinsicContentSize" width="115" height="18.666666666666668"/>
+        </designable>
+        <designable name="ala-l2-Jil">
+            <size key="intrinsicContentSize" width="34.666666666666664" height="18.666666666666668"/>
+        </designable>
+        <designable name="l7u-YG-pI3">
+            <size key="intrinsicContentSize" width="41" height="18.666666666666668"/>
+        </designable>
+        <designable name="pkm-JV-bpj">
+            <size key="intrinsicContentSize" width="38" height="18.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="eye.slash" catalog="system" width="128" height="84"/>
+        <namedColor name="general">
+            <color red="0.85900002717971802" green="0.18799999356269836" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
